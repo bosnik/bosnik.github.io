@@ -97,12 +97,12 @@ $(document).ready(function () {
 
     var modal = document.getElementById('overlay');
     // When the user clicks anywhere outside of the modal, close it
-    window.on('click', function (event) {
-        if ((window.matchMedia('(max-width: 575px)').matches && event.target == modal)) {
+    window.onclick = function (event) {
+        if ((window.matchMedia('(max-width: 375px)').matches && event.target == modal)) {
             modal.style.display = "none";
             
         }
-    });
+    };
 
     function validateForm(form) {
         $(form).validate({
