@@ -100,7 +100,7 @@ $(document).ready(function () {
     window.on('tap', function (event) {
         if ((window.matchMedia('(max-width: 575px)').matches && event.target == modal)) {
             modal.style.display = "none";
-            modal1.style.display = "none";
+            
         }
     });
 
