@@ -97,7 +97,7 @@ $(document).ready(function () {
 
     var modal = document.getElementById('overlay');
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
+    window.on('tap', function (event) {
         if ((window.matchMedia('(max-width: 575px)').matches && event.target == modal)) {
             modal.style.display = "none";
             modal1.style.display = "none";
