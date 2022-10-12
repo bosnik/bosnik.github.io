@@ -102,7 +102,7 @@ $(document).ready(function () {
             modal.style.display = "none";
             modal1.style.display = "none";
         }
-    };
+    });
 
     function validateForm(form) {
         $(form).validate({
