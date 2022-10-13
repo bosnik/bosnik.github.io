@@ -102,7 +102,7 @@ $(document).ready(function () {
            $('.overlay, #order').fadeOut('slow');
             
         }
-    });
+    };
 
     function validateForm(form) {
         $(form).validate({
