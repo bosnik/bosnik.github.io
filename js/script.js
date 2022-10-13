@@ -97,9 +97,9 @@ $(document).ready(function () {
 
     var modal = document.getElementById('overlay');
     // When the user clicks anywhere outside of the modal, close it
-    window.addEventListener("click", function (event) {
+    window.on("tap", function (event) {
         if ((window.matchMedia('(max-width: 875px)').matches && event.target == modal)) {
-            modal.style.display = "none";
+           $('.overlay, #order').fadeIn('slow');
             
         }
     });
